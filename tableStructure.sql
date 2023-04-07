@@ -1,0 +1,14 @@
+--
+-- Table structure for table `videos`
+--
+CREATE TABLE videos (
+  id INT NOT NULL AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL,
+  description VARCHAR(255) NOT NULL,
+  filename VARCHAR(255) NOT NULL,
+  mimetype VARCHAR(255) NOT NULL,
+  size INT NOT NULL,
+  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (id)
+);
